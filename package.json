@@ -1,0 +1,26 @@
+{
+    "name": "@rkunihiro/hello",
+    "version": "0.0.1",
+    "description": "npm package example",
+    "keywords": [],
+    "license": "ISC",
+    "author": "rkunihiro <11649545+rkunihiro@users.noreply.github.com>",
+    "type": "commonjs",
+    "main": "dist/index.js",
+    "bin": {
+        "hello": "bin/cli.js"
+    },
+    "files": [
+        "bin/*",
+        "dist/*"
+    ],
+    "scripts": {
+        "prebuild": "rm -rf dist",
+        "build": "tsc -p ."
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "prettier": "^3.1.0",
+        "typescript": "^5.3.2"
+    }
+}
